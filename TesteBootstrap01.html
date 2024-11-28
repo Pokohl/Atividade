@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Semântico</title>
+
+    <style>
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+        }
+
+        h3 {
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(255, 255, 255);
+        }
+
+        .carousel-item {
+            position: relative;
+        }
+
+        #carouselContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px; 
+        }
+
+        #menor {
+            width: 1080px;
+            height: 720px;
+        }
+
+        .post-container {
+            padding: 40px;
+            background-color: rgb(47, 47, 47);
+        }
+
+        .post-item {
+            margin-bottom: 20px;
+        }
+
+        .comment-section {
+            padding: 40px;
+            background-color: #e9ecef;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .image-gallery {
+            padding: 20px;
+            background-color: #333;
+        }
+
+        .image-gallery .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .image-gallery .col-md-4 {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        li {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            color: black;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #ffffff;
+        }
+
+        h4 {
+            color: #e9ecef;
+        }
+
+        body {
+            background-color: rgb(47, 47, 47);
+        }
+    </style>
+</head>
+<body>
+    <label style="font-weight: bold; color: #ffffff; font-size: larger;">Bruno Matsubara n°10 Pedro Brugnera n°34</label>
+    
+    <div id="carouselContainer">
+        <div id="menor">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" ></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="leo.jpg" class="d-block w-100" alt="Primeiro slide">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="gpr.jpg" class="d-block w-100" alt="Segundo slide">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="jkfhweui.jpg" class="d-block w-100" alt="Terceiro slide">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="background-color: rgb(219, 219, 219);">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="background-color:rgb(212, 212, 212)">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="gpr.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <p class="card-text" style="text-align: center;">ChatGPT é um chatbot desenvolvido pela OpenAI, lançado em 30 de novembro de 2022. Seu nome vem de "Chat", que se refere à sua função de conversa, e "GPT" (Generative Pre-trained Transformer), um modelo de linguagem avançado. O ChatGPT usa prompts e respostas sucessivas para prever e gerar respostas adequadas com base em seu treinamento, permitindo que os usuários ajustem a conversa quanto à duração, estilo, nível de detalhe e linguagem.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="leo.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <p class="card-text" style="text-align: center;">O Leonardo AI é uma plataforma de inteligência artificial que facilita a criação de conteúdo digital, como imagens e textos. Utilizando algoritmos avançados, permite personalizar designs e mídias de forma rápida, ajustando estilos e elementos conforme necessário, sendo útil para profissionais criativos que buscam otimizar seu trabalho.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="jkfhweui.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <p class="card-text" style="text-align: center;">O Gemini é uma plataforma de IA do Google que utiliza modelos avançados para oferecer respostas precisas e realizar tarefas complexas, como processamento de linguagem natural e análise de dados, visando melhorar a interação e a personalização em diversas aplicações.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
